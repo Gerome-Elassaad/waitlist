@@ -11,7 +11,7 @@
 
 </p>
 
-![GithubBanner](./app/opengraph-image.png)
+![GithubBanner](./app/opengraph.png)
 
 This is a template repository for creating a waitlist using Next.js 14, Notion as a CMS, Upstash Redis for rate limiting and Resend for sending emails with a custom domain.
 
