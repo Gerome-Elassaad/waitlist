@@ -21,7 +21,7 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={`https://nextjs-notion-waitlist.vercel.app/waitlist-logo.png`}
+          src={`https://codinit.dev/opengraph.png`}
           width="220"
           height="100"
           alt="Notion Waitlist Logo"
@@ -29,22 +29,22 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
         />
         <Text style={greeting}>Hi {userFirstname},</Text>
         <Text style={paragraph}>
-          Thanks for joining the waitlist for our Next.js + Notion CMS waitlist
-          template! I'm Lakshay, the developer behind this project. I'm glad to
+          Thanks for joining the waitlist for CodinIT.dev
+          I am Gerome, the solo developer behind this project. I am glad to
           have you on board.
         </Text>
         <Text style={paragraph}>
-          I'll keep you posted on the progress and notify you as soon as it's
+          Ill keep you posted on the progress and notify you as soon as it is
           ready for you to use. In the meantime, if you have any questions or
-          feedback, don't hesitate to reach out by replying directly to{" "}
-          <a href="mailto:lakshb.work@gmail.com" style={link}>
+          feedback, do not hesitate to reach out by replying directly to{" "}
+          <a href="mailto:gerome.e24@gmail.com" style={link}>
             this email {""}
           </a>
-          — I'm here to listen!
+          — I am here to listen!
         </Text>
         <Text style={paragraph}>
           You can also follow me on X/Twitter for updates:{" "}
-          <a href="https://x.com/blakssh" style={link}>
+          <a href="https://x.com/gerome_elassaad" style={link}>
             @blakssh
           </a>
         </Text>
@@ -64,7 +64,7 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
 );
 
 NotionWaitlistEmail.PreviewProps = {
-  userFirstname: "Tyler",
+  userFirstname: "Gerome",
 } as EmailProps;
 
 export default NotionWaitlistEmail;

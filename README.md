@@ -1,4 +1,4 @@
-<h1 align="center">Next.js + Notion — Wailtist Template</h1>
+<h1 align="center">CodinIT.dev Waitlist</h1>
 
 <p align="center">
 
@@ -17,7 +17,7 @@ This is a template repository for creating a waitlist using Next.js 14, Notion a
 
 The UI is built using a mix of shadcn/ui, Magic UI and Tailwind CSS.
 
-**Demo:** [https://nextjs-notion-waitlist.vercel.app](https://nextjs-notion-waitlist.vercel.app)
+**Demo:** [https://codinit-waitlist.vercel.app](https://codinit-waitlist.vercel.app)
 
 **Sample Database** ([Link](https://lakshaybhushan.notion.site/15e45b25609e80408f83ebb97b45882b?v=c949c24dff4a42b3baa31bfb3e8a3354))
 <a href="https://lakshaybhushan.notion.site/15e45b25609e80408f83ebb97b45882b?v=c949c24dff4a42b3baa31bfb3e8a3354" target="_blank" rel="noopener noreferrer">
@@ -114,4 +114,4 @@ However, if you use this template for commercial projects, please consider [buyi
 
 ---
 
-If you have any questions or need help with this template, feel free to reach out to me on [Twitter](https://x.com/blakssh) or leave a comment on this repository.
+If you have any questions or need help with this template, feel free to reach out to me on [Twitter](https://x.com/gerome_elassaad) or leave a comment on this repository.

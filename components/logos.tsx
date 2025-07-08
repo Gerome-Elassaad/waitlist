@@ -30,7 +30,7 @@ export default function Logos() {
       <motion.div variants={itemVariants}>
         <TextBlur
           className="text-center text-base text-zinc-300 sm:text-lg"
-          text="Simple and powerful tools that help you build faster"
+          text="Join the waitlist to get early access of the product and receive launch date when available!"
           duration={0.8}
         />
       </motion.div>

@@ -78,7 +78,7 @@ const Particles: React.FC<ParticlesProps> = ({
   const initCanvas = useCallback(() => {
     resizeCanvas();
     drawParticles();
-  }, [quantity, color]);
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -111,28 +111,6 @@ const Particles: React.FC<ParticlesProps> = ({
     };
   }, [color, initCanvas]);
 
-  useEffect(() => {
-    onMouseMove();
-  }, [mousePosition.x, mousePosition.y]);
-
-  useEffect(() => {
-    initCanvas();
-  }, [refresh, initCanvas]);
-
-  const onMouseMove = () => {
-    if (canvasRef.current) {
-      const rect = canvasRef.current.getBoundingClientRect();
-      const { w, h } = canvasSize.current;
-      const x = mousePosition.x - rect.left - w / 2;
-      const y = mousePosition.y - rect.top - h / 2;
-      const inside = x < w / 2 && x > -w / 2 && y < h / 2 && y > -h / 2;
-      if (inside) {
-        mouse.current.x = x;
-        mouse.current.y = y;
-      }
-    }
-  };
-
   type Circle = {
     x: number;
     y: number;
@@ -145,6 +123,28 @@ const Particles: React.FC<ParticlesProps> = ({
     dy: number;
     magnetism: number;
   };
+
+  const onMouseMove = useCallback(() => {
+    if (canvasRef.current) {
+      const rect = canvasRef.current.getBoundingClientRect();
+      const { w, h } = canvasSize.current;
+      const x = mousePosition.x - rect.left - w / 2;
+      const y = mousePosition.y - rect.top - h / 2;
+      const inside = x < w / 2 && x > -w / 2 && y < h / 2 && y > -h / 2;
+      if (inside) {
+        mouse.current.x = x;
+        mouse.current.y = y;
+      }
+    }
+  }, [mousePosition.x, mousePosition.y]);
+
+  useEffect(() => {
+    onMouseMove();
+  }, [mousePosition.x, mousePosition.y, onMouseMove]);
+
+  useEffect(() => {
+    initCanvas();
+  }, [refresh, initCanvas]);
 
   const resizeCanvas = () => {
     if (canvasRef.current && context.current) {
