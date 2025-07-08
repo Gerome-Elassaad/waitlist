@@ -24,7 +24,7 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
           src={`https://codinit.dev/opengraph.png`}
           width="220"
           height="100"
-          alt="Notion Waitlist Logo"
+          alt="Waitlist Logo"
           style={logo}
         />
         <Text style={greeting}>Hi {userFirstname},</Text>
@@ -45,13 +45,13 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
         <Text style={paragraph}>
           You can also follow me on X/Twitter for updates:{" "}
           <a href="https://x.com/gerome_elassaad" style={link}>
-            @blakssh
+            @Gerome_Elassaad
           </a>
         </Text>
         <Text style={signOff}>
           Best regards,
           <br />
-          Lakshay
+          Gerome
         </Text>
         <Hr style={hr} />
         <Text style={footer}>
