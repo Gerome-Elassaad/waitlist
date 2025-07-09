@@ -5,9 +5,9 @@ import { useState } from "react";
 import CTA from "@/components/cta";
 import Form from "@/components/form";
 import Logos from "@/components/logos";
-import Particles from "@/components/ui/particles";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { BeamsBackground } from "@/components/ui/beams-background";
 
 export default function Home() {
   const [name, setName] = useState<string>("");
@@ -109,8 +109,9 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center overflow-x-clip pt-12 md:pt-24">
-      <section className="flex flex-col items-center px-4 sm:px-6 lg:px-8">
+    <main className="flex min-h-screen flex-col items-center pt-12 md:pt-24">
+      <BeamsBackground />
+      <section className="z-10 flex flex-col items-center px-4 sm:px-6 lg:px-8">
         <Header />
 
         <CTA />
@@ -128,14 +129,6 @@ export default function Home() {
       </section>
 
       <Footer />
-
-      <Particles
-        quantityDesktop={350}
-        quantityMobile={100}
-        ease={80}
-        color={"#F7FF9B"}
-        refresh
-      />
     </main>
   );
 }
