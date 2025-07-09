@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 const FigtreeFont = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://waitlist.codinit.dev"),
+  metadataBase: new URL("https://codinit.dev"),
   title: "Waitlist | CodinIT.dev",
   description:
     "Join the waitlist for CodinIT.dev, a open-source platform that builds you your next startup idea with AI.",
