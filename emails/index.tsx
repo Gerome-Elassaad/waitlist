@@ -21,7 +21,7 @@ export const NotionWaitlistEmail = ({ userFirstname }: EmailProps) => (
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={`https://waitlist.codinit.dev/opengraph.png`}
+          src={`https://codinit.dev/opengraph.png`}
           width="220"
           height="100"
           alt="Waitlist Logo"

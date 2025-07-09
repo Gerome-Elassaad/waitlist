@@ -7,9 +7,32 @@ import { Analytics } from "@vercel/analytics/react";
 const FigtreeFont = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://waitlist.codinit.dev"),
   title: "Waitlist | CodinIT.dev",
   description:
     "Join the waitlist for CodinIT.dev, a open-source platform that builds you your next startup idea with AI.",
+  openGraph: {
+    siteName: "Join The Waitlist | CodinIT.dev",
+    images: [
+      {
+        url: "/opengraph.png",
+        type: "image/png",
+        width: 1280,
+        height: 832,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [
+      {
+        url: "/twitter-image.png",
+        type: "image/png",
+        width: 1280,
+        height: 832,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -19,22 +42,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
-      <meta property="og:image" content="/opengraph.png" />
-      <meta property="og:image:type" content="image/png" />
-      <meta property="og:image:width" content="1280" />
-      <meta property="og:image:height" content="832" />
-      <meta
-        property="og:site_name"
-        content="Waitlist CodinIT.dev"
-      />
-      <meta
-        property="og:url"
-        content="https://waitlist.codinit.dev/"
-      />
-      <meta name="twitter:image" content="/twitter-image.png" />
-      <meta name="twitter:image:type" content="image/png" />
-      <meta name="twitter:image:width" content="1280" />
-      <meta name="twitter:image:height" content="832" />
       <body className={FigtreeFont.className}>
         {children}
         <Toaster richColors position="top-center" />
