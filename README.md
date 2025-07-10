@@ -13,16 +13,8 @@
 
 ![GithubBanner](./app/opengraph.png)
 
-This is a template repository for creating a waitlist using Next.js 14, Notion as a CMS, Upstash Redis for rate limiting and Resend for sending emails with a custom domain.
 
-The UI is built using a mix of shadcn/ui, Magic UI and Tailwind CSS.
-
-**Demo:** [https://codinit-waitlist.vercel.app](https://codinit-waitlist.vercel.app)
-
-**Sample Database** ([Link](https://lakshaybhushan.notion.site/15e45b25609e80408f83ebb97b45882b?v=c949c24dff4a42b3baa31bfb3e8a3354))
-<a href="https://lakshaybhushan.notion.site/15e45b25609e80408f83ebb97b45882b?v=c949c24dff4a42b3baa31bfb3e8a3354" target="_blank" rel="noopener noreferrer">
- <img src ="./public/sample-db.png">
-</a>
+**Demo:** [https://waitlist.codinit.dev](https://waitlist.codinit.dev)
 
 ## Features
 
@@ -103,14 +95,6 @@ bun email
 ```
 
 Create a `.env.local` file in the root of the project and add the environment variables mentioned above. You can also have a look at the `.env.example` file for reference.
-
-## License
-
-You can use this template for personal or commercial projects. You can modify it as you like.
-
-However, if you use this template for commercial projects, please consider [buying me a coffee](https://www.buymeacoffee.com/lakshaybhushan) or sponsoring me on GitHub. It will help me to keep creating more templates like this.
-
-<a href="https://www.buymeacoffee.com/lakshaybhushan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50" width="200"></a>
 
 ---
 
